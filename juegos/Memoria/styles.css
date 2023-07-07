@@ -1,0 +1,52 @@
+.grid {
+    
+    display:flex;
+    flex-wrap: nowrap;
+    flex-direction:column;
+    width: 100px;
+    height: 100px;
+
+}
+body{
+    background-image: linear-gradient(to right, #2B9F3F, hsla(143, 89%, 43%, 0.898));
+}
+img{
+    width: 204px;
+    height: 197px;
+    margin: 3px;
+}
+#mesa{
+    position: relative;
+    margin: auto;
+    text-align: center;
+    display: block;
+    width: 90%;
+    height: auto;
+}
+body h1{
+    padding-block: 10px;
+    font-family: fantasy;
+    color: rgba(8, 8, 8, 0.563);
+    background-color: rgba(95, 182, 131, 0.83);
+    text-align: center;
+}
+.boton{
+	width: 100%;
+	display: grid	;
+	align-items: center;
+	justify-content: center;
+}
+#siguiente {
+	margin-top: 20px;
+	width: 100px;
+	height: 30px;
+	position: relative;
+	border: solid rgba(8, 8, 8, 0.563);
+	background-image: linear-gradient(to right, #2B9F3F, hsla(143, 89%, 43%, 0.898));
+	color: white;
+	
+}
+#siguiente:hover{
+	background: rgb(187, 250, 255);
+	color:#4a4a5c;
+}
