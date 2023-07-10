@@ -214,6 +214,7 @@ a{
     font-family: monospace;
     font-size: x-large;
     width: 50%;
+    color:#bc6c25;
 }
 .pfinal{
     padding-bottom: 3%;
@@ -221,8 +222,15 @@ a{
 }
 /*Botones*/
 .button{
+    color:#9AF2B3;
     background-color: #bc6c25;
-    border: solid black;
+    border-radius: 15%;
+    border: solid #bf2a23;
+    padding: 1%;
+}
+.button :hover{
+    color: #bc6c25;
+    background-color: #9AF2B3;
 }
 /*footer*/
 footer{
