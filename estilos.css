@@ -156,6 +156,7 @@ a{
     justify-content: center;
     align-items: center;
     text-align: center;
+    border-radius: 10%;
 }
 @media screen and (max-width: 767px) {
     .img1{
@@ -178,6 +179,7 @@ a{
     }
 }
 .img2{
+    border-radius: 10%;
     position: relative;
     margin: auto;
     margin-top: 15%;
@@ -228,7 +230,7 @@ a{
     border: solid #bf2a23;
     padding: 1%;
 }
-.button :hover{
+.button:hover{
     color: #bc6c25;
     background-color: #9AF2B3;
 }
