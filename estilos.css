@@ -219,6 +219,11 @@ a{
     padding-bottom: 3%;
     padding-top: 2%;
 }
+/*Botones*/
+.button{
+    background-color: #bc6c25;
+    border: solid black;
+}
 /*footer*/
 footer{
     display: flex;
