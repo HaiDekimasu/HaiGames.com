@@ -13,22 +13,15 @@ function sumarPuntos() {
 
    puntos++;
    document.getElementById("puntos").innerHTML = "Puntos: <b>" + puntos + "/" + necesarios + "  </b>";
-   const contenedor = document.querySelector('.contenedor');
-   const contenedorRect = contenedor.getBoundingClientRect();
-   const contenedorWidth = contenedor.offsetWidth - document.getElementById("player").offsetWidth;
-   const contenedorHeight = contenedor.offsetHeight - document.getElementById("player").offsetHeight;
-   const randNum = Math.round(Math.random() * (contenedorWidth - 100)) + 50; // Ajusta el rango de coordenadas en el eje 
-   const randNum2 = Math.round(Math.random() * (contenedorHeight - 100)) + 50;
-   const newTop = Math.max(contenedorRect.top, Math.min(randNum, contenedorRect.top + contenedorRect.height));
-   const newLeft = Math.max(contenedorRect.left, Math.min(randNum2, contenedorRect.left + contenedorRect.width));
-   document.getElementById("player").style.top = newTop + "px";
-   document.getElementById("player").style.left = newLeft + "px";
+   const randNum = Math.round(Math.random() * 350);
+   const randNum2 = Math.round(Math.random() * 350);
+   document.getElementById("player").style.marginTop = randNum + "px";
+   document.getElementById("player").style.marginLeft = randNum2 + "px";
    if (puntos === necesarios) {
       alert("¡Ganaste!");
       detenerTiempo();
    }
 }
-
 
 
 function restarTiempo() {
