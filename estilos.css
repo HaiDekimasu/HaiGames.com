@@ -326,17 +326,17 @@ footer{
 }
 @media screen and (max-width: 479px) {
     footer {
-        border-width: 3px;
+        border-width: 5px;
     }
 }
 @media (min-width: 480px) and (max-width: 767px) { 
     footer {
-        border-width: 5px;
+        border-width: 8px;
     }
 }
 @media (min-width: 768px) and (max-width: 1023px) { 
     footer {
-        border-width: 10px;
+        border-width: 12px;
     }
 }
 @media (min-width: 1024px) and (max-width: 1280px) { 
@@ -367,5 +367,24 @@ footer{
     background-color: lightgreen;
     color: forestgreen;
 }
-
+@media screen and (max-width: 479px) {
+    #f01, #f02{
+        font-size: 3vh;
+    }
+}
+@media (min-width: 480px) and (max-width: 767px) { 
+    #f01, #f02{
+        font-size: 5vh;
+    }
+}
+@media (min-width: 768px) and (max-width: 1023px) { 
+    #f01, #f02{
+        font-size: 10vh;
+    }
+}
+@media (min-width: 1024px) and (max-width: 1280px) { 
+    #f01, #f02{
+        font-size: 15vh;
+    }
+}
 
