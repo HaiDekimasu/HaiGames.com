@@ -82,7 +82,7 @@
 }
 @media screen and (max-width: 479px) {
     #nombre {
-        font-size: 4vh;
+        font-size: 3vh;
         padding-left: 15%;
         padding-top: 2%;
     }
@@ -339,7 +339,7 @@ footer{
 }
 @media screen and (max-width: 479px) {
     #f01, #f02{
-        font-size: 3vh;
+        font-size: 2vh;
     }
 }
 @media (min-width: 480px) and (max-width: 767px) { 
