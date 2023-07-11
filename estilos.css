@@ -219,7 +219,7 @@ a{
 .img1{
     position: relative;
     margin: auto;
-    padding-top: 10%;
+    padding-top: 5%;
     padding-bottom: 2%;
     width: 40%;
     display: flex;
@@ -234,7 +234,7 @@ a{
     border-radius: 10%;
     position: relative;
     margin: auto;
-    margin-top: 15%;
+    margin-top: 10%;
     padding-bottom: 2%;
     width: 70%;
     display: flex;
@@ -249,7 +249,7 @@ a{
     font-weight: bolder;
     margin: auto;
     font-family: monospace;
-    font-size: 2rem;
+    font-size: 20px;
     width: 50%;
     color:#bc6c25;
 }
@@ -306,12 +306,12 @@ footer{
 }
 @media (min-width: 768px) and (max-width: 1023px) { 
     footer {
-        border-width: 12px;
+        border-width: 10px;
     }
 }
 @media (min-width: 1024px) and (max-width: 1280px) { 
     footer {
-        border-width: 15px;
+        border-width: 12px;
     }
 }
 #f01{
@@ -349,12 +349,12 @@ footer{
 }
 @media (min-width: 768px) and (max-width: 1023px) { 
     #f01, #f02{
-        font-size: 10vh;
+        font-size: 8vh;
     }
 }
 @media (min-width: 1024px) and (max-width: 1280px) { 
     #f01, #f02{
-        font-size: 15vh;
+        font-size: 10vh;
     }
 }
 
