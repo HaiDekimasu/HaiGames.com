@@ -13,8 +13,8 @@ function sumarPuntos() {
 
    puntos++;
    document.getElementById("puntos").innerHTML = "Puntos: <b>" + puntos + "/" + necesarios + "  </b>";
-   const randNum = Math.round(Math.random() * 350);
-   const randNum2 = Math.round(Math.random() * 350);
+   const randNum = Math.round(Math.random() * maxWidth);
+   const randNum2 = Math.round(Math.random() * maxHeight);
    document.getElementById("player").style.marginTop = randNum + "px";
    document.getElementById("player").style.marginLeft = randNum2 + "px";
    if (puntos === necesarios) {
