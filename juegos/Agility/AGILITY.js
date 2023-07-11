@@ -13,6 +13,8 @@ function sumarPuntos() {
 
    puntos++;
    document.getElementById("puntos").innerHTML = "Puntos: <b>" + puntos + "/" + necesarios + "  </b>";
+   const maxWidth = window.innerWidth - 100; // Establece el ancho máximo del área de juego
+   const maxHeight = window.innerHeight - 100;
    const randNum = Math.round(Math.random() * maxWidth);
    const randNum2 = Math.round(Math.random() * maxHeight);
    document.getElementById("player").style.marginTop = randNum + "px";
