@@ -82,21 +82,21 @@
 }
 @media screen and (max-width: 479px) {
     #nombre {
-        font-size: 5vh;
+        font-size: 3vh;
         padding-left: 15%;
         padding-top: 2%;
     }
 }
 @media (min-width: 480px) and (max-width: 767px) { 
     #nombre{
-        font-size: 8vh;
+        font-size: 5vh;
         padding-left: 15%;
         padding-top: 2%;
     }
 }
 @media (min-width: 768px) and (max-width: 1023px) { 
     #nombre{
-        font-size: 12vh;
+        font-size: 10vh;
         padding-left: 15%;
         padding-top: 2%;
     }
@@ -326,17 +326,17 @@ footer{
 }
 @media screen and (max-width: 479px) {
     footer {
-        border-width: 5px;
+        border-width: 3px;
     }
 }
 @media (min-width: 480px) and (max-width: 767px) { 
     footer {
-        border-width: 8px;
+        border-width: 5px;
     }
 }
 @media (min-width: 768px) and (max-width: 1023px) { 
     footer {
-        border-width: 12px;
+        border-width: 10px;
     }
 }
 @media (min-width: 1024px) and (max-width: 1280px) { 
