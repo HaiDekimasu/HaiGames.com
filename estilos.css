@@ -82,7 +82,7 @@
 }
 @media screen and (max-width: 479px) {
     #nombre {
-        font-size: 3vh;
+        font-size: 4vh;
         padding-left: 15%;
         padding-top: 2%;
     }
@@ -228,26 +228,8 @@ a{
     text-align: center;
     border-radius: 10%;
 }
-@media screen and (max-width: 767px) {
-    .img1{
-        width: 20%;
-        
-    
-    }
-}
-@media (min-width: 767px) and (max-width: 1024px) { 
-    .img1{
-        width: 25% ;
-        
 
-    }
-}
-@media (min-width: 1024px) and (max-width: 1266px) { 
-    .img1{
-        width: 30%;
-        
-    }
-}
+
 .img2{
     border-radius: 10%;
     position: relative;
@@ -260,33 +242,21 @@ a{
     align-items: center;
     text-align: center;
 }
-@media screen and (max-width: 767px) {
-    .img2{
-        width: 20%;
-        margin-top: 5%;
-    }
-}
-@media (min-width: 767px) and (max-width: 1024px) { 
-    .img2{
-        width: 30% ;
-        margin-top: 8%;
-    }
-}
-@media (min-width: 1024px) and (max-width: 1266px) { 
-    .img2{
-        width: 40%;
-        margin-top: 10%;
-    }
-}
+
 /*parrafos*/
 .contenedor p{
     position: relative;
     font-weight: bolder;
     margin: auto;
     font-family: monospace;
-    font-size: x-large;
+    font-size: 2rem;
     width: 50%;
     color:#bc6c25;
+}
+@media screen and (max-width: 679px) {
+    .contenedor p{
+        font-size: 1rem;
+    }
 }
 .pfinal{
     padding-bottom: 3%;
