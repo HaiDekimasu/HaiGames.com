@@ -13,16 +13,27 @@ function sumarPuntos() {
 
    puntos++;
    document.getElementById("puntos").innerHTML = "Puntos: <b>" + puntos + "/" + necesarios + "  </b>";
-   const maxWidth = window.innerWidth - 10; // Establece el ancho máximo del área de juego
-   const maxHeight = window.innerHeight - 10;
-   const randNum = Math.round(Math.random() * maxWidth);
-   const randNum2 = Math.round(Math.random() * maxHeight);
-   document.getElementById("player").style.marginTop = randNum + "px";
-   document.getElementById("player").style.marginLeft = randNum2 + "px";
+   const contenedor = document.querySelector('.contenedor');
+   const contenedorWidth = contenedor.offsetWidth - document.getElementById("player").offsetWidth - getPlayerMarginLeft();
+   const contenedorHeight = contenedor.offsetHeight - document.getElementById("player").offsetHeight - getPlayerMarginTop();
+   const randNum = Math.round(Math.random() * contenedorWidth);
+   const randNum2 = Math.round(Math.random() * contenedorHeight);
+   document.getElementById("player").style.top = randNum + "px";
+   document.getElementById("player").style.left = randNum2 + "px";
    if (puntos === necesarios) {
       alert("¡Ganaste!");
       detenerTiempo();
    }
+}
+
+function getPlayerMarginTop() {
+   const playerStyles = getComputedStyle(document.getElementById("player"));
+   return parseInt(playerStyles.marginTop);
+}
+
+function getPlayerMarginLeft() {
+   const playerStyles = getComputedStyle(document.getElementById("player"));
+   return parseInt(playerStyles.marginLeft);
 }
 
 
