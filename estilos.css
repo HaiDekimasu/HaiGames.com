@@ -15,13 +15,42 @@
     color: #bc6c25;
     background-color: #9AF2B3;
 }
+@media screen and (max-width: 479px) {
+    #cabezal {
+        border-width: 5px;
+    }
+}
+@media (min-width: 480px) and (max-width: 767px) { 
+    #cabezal {
+        border-width: 8px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1023px) { 
+    #cabezal {
+        border-width: 12px;
+    }
+}
+@media (min-width: 1024px) and (max-width: 1280px) { 
+    #cabezal {
+        border-width: 15px;
+    }
+}
+
 #logo{
     width: 140px;
     height: 140px;
     
 
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 479px) {
+    #logo {
+        position: relative;
+        width: 80px; /* Reducir el tamaño del logo */
+        height: 80px;
+        
+    }
+}
+@media (min-width: 480px) and (max-width: 767px) { 
     #logo {
         position: relative;
         width: 100px; /* Reducir el tamaño del logo */
@@ -29,12 +58,18 @@
         
     }
 }
-@media screen and (max-width: 480px) {
-    #logo {
+@media (min-width: 768px) and (max-width: 1023px) { 
+    #logo{
         position: relative;
-        width: 80px; /* Reducir el tamaño del logo */
-        height: 80px;
-        
+        width: 120px; /* Reducir el tamaño del logo */
+        height: 120px;
+    }
+}
+@media (min-width: 1024px) and (max-width: 1280px) { 
+    #logo{
+        position: relative;
+        width: 140px; /* Reducir el tamaño del logo */
+        height: 140px;
     }
 }
 #nombre{
@@ -45,24 +80,31 @@
     color: #bc6c25
     
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 479px) {
+    #nombre {
+        font-size: 5vh;
+        padding-left: 15%;
+        padding-top: 2%;
+    }
+}
+@media (min-width: 480px) and (max-width: 767px) { 
     #nombre{
         font-size: 8vh;
-        padding-left: 5%;
+        padding-left: 15%;
         padding-top: 2%;
     }
 }
 @media (min-width: 768px) and (max-width: 1023px) { 
     #nombre{
         font-size: 12vh;
-        padding-left: 8%;
+        padding-left: 15%;
         padding-top: 2%;
     }
 }
-@media (min-width: 1024px) and (max-width: 1266px) { 
+@media (min-width: 1024px) and (max-width: 1280px) { 
     #nombre{
         font-size: 15vh;
-        padding-left: 10%;
+        padding-left: 15%;
         padding-top: 0%;
     }
 }
@@ -82,9 +124,7 @@ a{
 .primer{
     width: 48%;
     height: 100vh;
-    margin-left: 5px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin: 3px;
     border: solid;
     border-color: #bc6c25;
     border-style: dashed;
@@ -93,22 +133,36 @@ a{
     float: left;
     background-color: #9AF2B3;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 479px) {
     .primer{
         width: 97%;
         height: 100%;
+        border-width: 6px;
+        margin:1px;
+    }
+}
+@media (min-width: 480px) and (max-width: 767px) { 
+    .primer{
+        width: 97%;
+        height: 100%;
+        border-width: 7px;
+        margin:2px;
     }
 }
 @media (min-width: 767px) and (max-width: 1024px) { 
     .primer{
         width: 97%;
         height: 100%;
+        border-width: 8px;
+        margin:3px;
     }
 }
-@media (min-width: 1024px) and (max-width: 1266px) { 
+@media (min-width: 1024px) and (max-width: 1280px) { 
     .primer{
         width: 97%;
         height: 100%;
+        border-width: 9px;
+        margin:4px;
     }
 }
 
@@ -116,9 +170,7 @@ a{
 .segundo{
     width: 48%;
     height: 100vh;
-    margin-right: 5px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin: 3px;
     border: solid;
     border-color: #bc6c25;
     border-style: dashed;
@@ -127,22 +179,40 @@ a{
     float: right;
     background-color: #9AF2B3;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 479px) {
     .segundo{
+        float: left;
         width: 97%;
         height: 100%;
+        border-width: 6px;
+        margin:1px;
+    }
+}
+@media (min-width: 480px) and (max-width: 767px) { 
+    .segundo{
+        float: left;
+        width: 97%;
+        height: 100%;
+        border-width: 7px;
+        margin:2px;
     }
 }
 @media (min-width: 767px) and (max-width: 1024px) { 
     .segundo{
+        float: left;
         width: 97%;
         height: 100%;
+        border-width: 8px;
+        margin:3px;
     }
 }
-@media (min-width: 1024px) and (max-width: 1266px) { 
+@media (min-width: 1024px) and (max-width: 1280px) { 
     .segundo{
+        float: left;
         width: 97%;
         height: 100%;
+        border-width: 9px;
+        margin:4px;
     }
 }
 /* imagenes*/
@@ -222,6 +292,10 @@ a{
     padding-bottom: 3%;
     padding-top: 2%;
 }
+.pfinal2{
+    padding-bottom: 3%;
+    padding-top: 5%;
+}
 /*Botones*/
 .button{
     color:#9AF2B3;
@@ -229,11 +303,13 @@ a{
     border-radius: 15%;
     border: solid #bf2a23;
     padding: 1%;
+    margin-bottom: 2%;
 }
 .button:hover{
     color: #bc6c25;
     background-color: #9AF2B3;
 }
+
 /*footer*/
 footer{
     display: flex;
@@ -248,7 +324,26 @@ footer{
     position: relative;
     margin: auto;
 }
-
+@media screen and (max-width: 479px) {
+    footer {
+        border-width: 5px;
+    }
+}
+@media (min-width: 480px) and (max-width: 767px) { 
+    footer {
+        border-width: 8px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1023px) { 
+    footer {
+        border-width: 12px;
+    }
+}
+@media (min-width: 1024px) and (max-width: 1280px) { 
+    footer {
+        border-width: 15px;
+    }
+}
 #f01{
     margin:auto;
     font-size: 5vh;
@@ -256,7 +351,8 @@ footer{
     color: #bc6c25;
     padding: 1rem;
 }
-#f01 :hover{
+
+#f01:hover{
     background-color: lightgreen;
     color: forestgreen;
 }
@@ -267,7 +363,7 @@ footer{
     color: #bc6c25;
     padding: 1rem;
 }
-#f02 :hover{
+#f02:hover{
     background-color: lightgreen;
     color: forestgreen;
 }
