@@ -14,27 +14,21 @@ function sumarPuntos() {
    puntos++;
    document.getElementById("puntos").innerHTML = "Puntos: <b>" + puntos + "/" + necesarios + "  </b>";
    const contenedor = document.querySelector('.contenedor');
-   const contenedorWidth = contenedor.offsetWidth - document.getElementById("player").offsetWidth - getPlayerMarginLeft();
-   const contenedorHeight = contenedor.offsetHeight - document.getElementById("player").offsetHeight - getPlayerMarginTop();
-   const randNum = Math.round(Math.random() * contenedorWidth);
-   const randNum2 = Math.round(Math.random() * contenedorHeight);
-   document.getElementById("player").style.top = randNum + "px";
-   document.getElementById("player").style.left = randNum2 + "px";
+   const contenedorRect = contenedor.getBoundingClientRect();
+   const contenedorWidth = contenedor.offsetWidth - document.getElementById("player").offsetWidth;
+   const contenedorHeight = contenedor.offsetHeight - document.getElementById("player").offsetHeight;
+   const randNum = Math.round(Math.random() * (contenedorWidth - 100)) + 50; // Ajusta el rango de coordenadas en el eje 
+   const randNum2 = Math.round(Math.random() * (contenedorHeight - 100)) + 50;
+   const newTop = Math.max(contenedorRect.top, Math.min(randNum, contenedorRect.top + contenedorRect.height));
+   const newLeft = Math.max(contenedorRect.left, Math.min(randNum2, contenedorRect.left + contenedorRect.width));
+   document.getElementById("player").style.top = newTop + "px";
+   document.getElementById("player").style.left = newLeft + "px";
    if (puntos === necesarios) {
       alert("¡Ganaste!");
       detenerTiempo();
    }
 }
 
-function getPlayerMarginTop() {
-   const playerStyles = getComputedStyle(document.getElementById("player"));
-   return parseInt(playerStyles.marginTop);
-}
-
-function getPlayerMarginLeft() {
-   const playerStyles = getComputedStyle(document.getElementById("player"));
-   return parseInt(playerStyles.marginLeft);
-}
 
 
 function restarTiempo() {
