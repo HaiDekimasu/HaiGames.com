@@ -74,3 +74,26 @@ h1{
 	background: rgb(187, 250, 255);
 	color:#4a4a5c;
 }
+/*Responsive____________________________________________________________________________________________________________*/
+@media (min-width: 992px) and (max-width: 1024px){
+	.contenedor{
+		width: 80%;
+	}
+}
+@media (min-width: 768px) and (max-width: 992px) {
+	.contenedor{
+		width: 80%;
+	}
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+    .contenedor{
+		width: 90%;
+	}
+}
+
+@media (min-width: 375px) and (max-width: 480px) {
+    .contenedor{
+		width: 90%;
+	}
+}
